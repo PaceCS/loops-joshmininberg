@@ -1,58 +1,44 @@
-
 // The function min will take in an array and log its minimum value.
 function min(inArray) {
     // We do this by stepping through each entry of the array.
     // First, set the minimum to be the first value in the array.
-    let min = inArray[/*insert the appropriate value here*/];
+    const min = inArray[0];
 
     // Now go through all the remaining entries of the array
     // and determine if the current entry should become the new minimum
-    for (let i = 1; i < inArray.length; i += 1) {
+    for (let i = 0; i < inArray.length; i += 1) {
         // If the current value is less than the minimum then it becomes the new minimum
         if (inArray[i] < min) {
             min = inArray[i];
         }
     }
-
     // Now that the for loop has finished, log the minimum to the console.
-    console.log(/* Put the appropriate variable here */);
+    console.log('The minimum value is ' + min + '.');
 }
 
 // The function max will take in an array and log its maximum value.
 function max(inArray) {
-
+    const max = inArray[0];
+    for (let i = 0; i < inArray.length; i += 1) {
+        if (inArray[i] > max) {
+            max = inArray[i];
+        }
+    }
+    console.log('The maximum value is ' + max + '.');
 }
 
 // The function sum will take in an array and log the sum of the array.
-function sum(inArray) {
-
-}
+function sum(inArray) {}
 
 // The function average will take in an array and log the average of the values.
-function average(inArray) {
+function average(inArray) {}
 
-}
-
-
-
-//Try out your function here.
+// Try out your function here.
 const testArray = [1, 4, 5, 6, 9];
 min(testArray);
 max(testArray);
 sum(testArray);
 average(testArray);
-
-
-
-
-
-
-
-
-
-
-
-
 
 // -------------------------------------------------------------------------------
 // Testing - DON'T CHANGE ANYTHING BELOW
@@ -70,10 +56,10 @@ for (let i = 0; i < a.length; i += 1) {
     [min, max, sum, average].forEach((j) => {
         j(a[i]);
     });
-    log[0] = log[0] && (out[0] == `The minimum value is ${result[i][0]}.`);
-    log[1] = log[1] && (out[1] == `The maximum value is ${result[i][1]}.`);
-    log[2] = log[2] && (out[2] == `The sum of the array is ${result[i][2]}.`);
-    log[3] = log[3] && (out[3] == `The average of the array is ${result[i][3]}.`);
+    log[0] = log[0] && out[0] == `The minimum value is ${result[i][0]}.`;
+    log[1] = log[1] && out[1] == `The maximum value is ${result[i][1]}.`;
+    log[2] = log[2] && out[2] == `The sum of the array is ${result[i][2]}.`;
+    log[3] = log[3] && out[3] == `The average of the array is ${result[i][3]}.`;
 }
 printme(`\t did you properly implement min?\t ${log[0]} `);
 printme(`\t did you properly implement max?\t ${log[1]}`);
