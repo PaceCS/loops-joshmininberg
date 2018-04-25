@@ -30,17 +30,21 @@ function max(inArray) {
 // The function sum will take in an array and log the sum of the array.
 function sum(inArray) {
     let sum = inArray[0];
-    for (let i = 0; i < inArray.lengt h; i += ) {
-        if (inArray[i] > sum) {
-            sum = inArray[i];
-        }
+    for (let i = 1; i < inArray.length; i += 1) {
+        sum = inArray[i] + sum;
     }
     console.log('The sum of the array is ' + sum + '.');
 }
 
 // The function average will take in an array and log the average of the values.
-function average(inArray) {}
-
+function average(inArray) {
+    let sum = inArray[0];
+    for (let i = 1; i < inArray.length; i += 1) {
+        sum = inArray[i] + sum;
+    }
+    let average = sum  / inArray.length;
+    console.log('The average of the array is ' + average + '.');
+}
 // Try out your function here.
 const testArray = [1, 4, 5, 6, 9];
 min(testArray);
