@@ -2,7 +2,7 @@
 function min(inArray) {
     // We do this by stepping through each entry of the array.
     // First, set the minimum to be the first value in the array.
-    const min = inArray[0];
+    let min = inArray[0];
 
     // Now go through all the remaining entries of the array
     // and determine if the current entry should become the new minimum
@@ -18,7 +18,7 @@ function min(inArray) {
 
 // The function max will take in an array and log its maximum value.
 function max(inArray) {
-    const max = inArray[0];
+    let max = inArray[0];
     for (let i = 0; i < inArray.length; i += 1) {
         if (inArray[i] > max) {
             max = inArray[i];
@@ -28,7 +28,15 @@ function max(inArray) {
 }
 
 // The function sum will take in an array and log the sum of the array.
-function sum(inArray) {}
+function sum(inArray) {
+    let sum = inArray[0];
+    for (let i = 0; i < inArray.lengt h; i += ) {
+        if (inArray[i] > sum) {
+            sum = inArray[i];
+        }
+    }
+    console.log('The sum of the array is ' + sum + '.');
+}
 
 // The function average will take in an array and log the average of the values.
 function average(inArray) {}
