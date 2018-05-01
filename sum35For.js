@@ -18,7 +18,7 @@ if (val % 5 == 0) {
 } else {
     div5 = false;
 }
-//Try out your function here.
+//Try out if (div3 && div5) {
 sum35For(6);
 sum35For(20);
 sum35For(1000);
