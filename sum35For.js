@@ -2,7 +2,9 @@
 // The function outputs the sum of all multiples of 3 and 5 that are less than that number.
 
 function sum35For(N) {
-for(let val = 1; val< userInput; val += 1)
+        let multiples = 0;
+        let sum = 0;
+for(let val = 1; val< N; val += 1)
 let div3;
 let div5;
 }
@@ -18,6 +20,19 @@ if (val % 5 == 0) {
 } else {
     div5 = false;
 }
+if(div5 == true){
+    multiples += 1;
+    sum += val 1
+if(div3 == true){
+    multiples += 1;
+    sum += val 1;
+if (div3 && div5 == true){
+    multiples -= 1;
+    sum -= val ;
+    console.log("There are " + multiples + " mutliples of 3 and 5 that are less than 6. ")
+    console.log("There are " + multiples + "multiples of 3 and 5 that are less than 20.")
+}
+
 //Try out if (div3 && div5) {
 sum35For(6);
 sum35For(20);
