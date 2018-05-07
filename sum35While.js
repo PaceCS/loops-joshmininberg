@@ -2,6 +2,13 @@
 // The function outputs the sum of all multiples of 3 and 5 that are less than that number.
 
 function sum35While(N) {
+    let multiples = 0;
+    let sum = 0;
+    let counter = 0;
+
+     while(counter < N ) {
+         let div3
+         let div5
 
 }
 
